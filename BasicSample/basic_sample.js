@@ -59,11 +59,11 @@ handlers.helloWorld = function (args, context) {
 };
 
 // This is a simple example of making a PlayFab server API call
-handlers.makeAPICall = function (args, context) {
+handlers.UpdatePlayerStats = function (args, context) {
     var request = {
         PlayFabId: currentPlayerId, Statistics: [{
                 StatisticName: "AsteroidScore",
-                Value: 0
+                Value: args.highscore
             }]
     };
     // The pre-defined "server" object has functions corresponding to each PlayFab server API 
