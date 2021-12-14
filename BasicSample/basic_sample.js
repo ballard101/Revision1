@@ -71,6 +71,7 @@ handlers.UpdatePlayerStats = function (args, context) {
     // authenticated as your title and handles all communication with 
     // the PlayFab API, so you don't have to write extra code to issue HTTP requests. 
     var playerStatResult = server.UpdatePlayerStatistics(request);
+	return(messageValue: "Updated Cloud Stats"
 };
 
 // This is a simple example of making a web request to an external HTTP API.
