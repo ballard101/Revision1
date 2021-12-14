@@ -62,7 +62,7 @@ handlers.helloWorld = function (args, context) {
 handlers.makeAPICall = function (args, context) {
     var request = {
         PlayFabId: currentPlayerId, Statistics: [{
-                StatisticName: "AseroidScore",
+                StatisticName: "AsteroidScore",
                 Value: 0
             }]
     };
